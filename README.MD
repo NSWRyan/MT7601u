@@ -28,6 +28,18 @@ If you dont have git package then you install with this command.
 ```
 sudo apt-get install git
 ```
+## ALSO DONT FORGET TO GET THE KERNEL SOURCES TOO (FOR KERNEL 5.x)
+```
+sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
+sudo chmod +x /usr/bin/rpi-source
+/usr/bin/rpi-source -q --tag-update
+rpi-source
+```
+## AND EXTRA TOOLS TO BUILD THE KERNEL
+```
+sudo apt install libssl-dev bison flex
+```
+
 ### GETTING SOURCE CODE FROM THIS REPOSITORY
 Get this driver with git clone method from this repo. Type to terminal
 ```

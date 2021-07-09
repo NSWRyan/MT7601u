@@ -28,13 +28,19 @@ If you dont have git package then you install with this command.
 ```
 sudo apt-get install git
 ```
-## ALSO DONT FORGET TO GET THE KERNEL SOURCES TOO (FOR KERNEL 5.x)
+
+## ATTENTION
+
+if you receive  "Makefile:387: recipe for target 'LINUX' failed".
+You need to get Raspberry Pi linux headers using rpi-source.
+
 ```
-sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
-sudo chmod +x /usr/bin/rpi-source
+sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source  
+sudo chmod +x /usr/bin/rpi-source 
 /usr/bin/rpi-source -q --tag-update
-rpi-source
+sudo rpi-source
 ```
+
 ## AND EXTRA TOOLS TO BUILD THE KERNEL
 ```
 sudo apt install libssl-dev bison flex
@@ -192,18 +198,6 @@ sudo iptables -A FORWARD -i ra0 -o eth0 -j ACCEPT
 sudo iptables -t nat -S
 sudo service isc-dhcp-server restart
 
-```
-
-## ATTENTION
-
-if you receive  "Makefile:387: recipe for target 'LINUX' failed".
-You need to get Raspberry Pi linux headers using rpi-source.
-
-```
-sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source  
-sudo chmod +x /usr/bin/rpi-source 
-/usr/bin/rpi-source -q --tag-update
-sudo rpi-source
 ```
 
 ## THANKS

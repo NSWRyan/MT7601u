@@ -29,6 +29,11 @@ If you dont have git package then you install with this command.
 sudo apt-get install git
 ```
 
+## AND EXTRA TOOLS TO BUILD THE KERNEL
+```
+sudo apt install libssl-dev bison flex bc
+```
+
 ## ATTENTION
 
 if you receive  "Makefile:387: recipe for target 'LINUX' failed".
@@ -39,11 +44,6 @@ sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -
 sudo chmod +x /usr/bin/rpi-source 
 /usr/bin/rpi-source -q --tag-update
 sudo rpi-source
-```
-
-## AND EXTRA TOOLS TO BUILD THE KERNEL
-```
-sudo apt install libssl-dev bison flex
 ```
 
 ### GETTING SOURCE CODE FROM THIS REPOSITORY
